@@ -1,6 +1,5 @@
-*,
-* ::after,
-* ::before {
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
   padding: 0;
   margin: 0;
   box-sizing: inherit;
@@ -12,11 +11,66 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
 }
 
-.test {
-  color: red;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 66% auto;
+  font-size: 1.3rem;
+}
+.navigation__name {
+  font-size: 2rem;
+  color: #00a1b6;
+}
+.navigation__link {
+  color: #FBFCFF;
+}
+.navigation__nav {
+  background-color: #1c2e49;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 2rem 4rem;
+  align-items: baseline;
+}
+.navigation__list {
+  display: flex;
+}
+.navigation__link {
+  display: block;
+  padding: 0 1rem;
+}
+.navigation__img {
+  width: 10%;
+}
+
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+.social__item {
+  width: auto;
+  padding: 2rem;
+}
+.social__img {
+  width: 4rem;
+}
+
+.hero {
+  background-color: #20375a;
 }
 
 /*# sourceMappingURL=style.css.map */

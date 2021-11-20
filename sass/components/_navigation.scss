@@ -1,0 +1,45 @@
+.navigation {
+  display: grid;
+  grid-template-columns: 66% auto;
+  font-size: $default-font-size;
+  &__name {
+    font-size: 2rem;
+    color: $color-tertiary-light;
+  }
+  &__link {
+    color: $color-secundary;
+  }
+  &__nav {
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem 2rem 4rem;
+    align-items: baseline;
+  }
+  &__list {
+    display: flex;
+  }
+  &__link {
+    display: block;
+    padding: 0 1rem;
+  }
+  &__img {
+    width: 10%;
+  }
+}
+
+.social {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+  }
+  &__item{
+    width: auto;
+    padding: 2rem;
+  }
+  &__img {
+    width: 4rem;
+  }
+}
