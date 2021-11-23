@@ -31,35 +31,33 @@ body {
   display: grid;
   grid-template-columns: 66% auto;
   font-size: 1.3rem;
+  height: 10vh;
 }
 .navigation__name {
   font-size: 2rem;
-  color: #00a1b6;
+  color: #FFFAFF;
 }
 .navigation__link {
-  color: #FBFCFF;
+  color: #FFFAFF;
 }
 .navigation__nav {
-  background-color: #1c2e49;
+  background-color: #035FA5;
   display: flex;
   justify-content: space-between;
   padding: 2rem 2rem 2rem 4rem;
-  align-items: baseline;
+  align-items: center;
 }
 .navigation__list {
   display: flex;
 }
 .navigation__link {
-  display: block;
   padding: 0 1rem;
-}
-.navigation__img {
-  width: 10%;
 }
 
 .social__list {
   display: flex;
   justify-content: center;
+  background-color: #FFFAFF;
 }
 .social__item {
   width: auto;
@@ -70,7 +68,32 @@ body {
 }
 
 .hero {
-  background-color: #20375a;
+  display: grid;
+  grid-template-columns: 66% auto;
+  position: relative;
+}
+.hero__main {
+  height: 90vh;
+  color: #30BCED;
+  background-color: #1968aa;
+  font-size: 5rem;
+}
+.hero__secundary {
+  background-color: #FFFAFF;
+  z-index: 0;
+}
+.hero__logo {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-17.5%, -55%);
+  z-index: -1;
+}
+.hero__logo--white_side {
+  clip-path: polygon(0 0, 49.4% 0, 49.4% 100%, 0% 100%);
+  z-index: 1;
+  filter: brightness(100);
 }
 
 /*# sourceMappingURL=style.css.map */

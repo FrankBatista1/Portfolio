@@ -2,29 +2,26 @@
   display: grid;
   grid-template-columns: 66% auto;
   font-size: $default-font-size;
+  height: 10vh;
   &__name {
     font-size: 2rem;
-    color: $color-tertiary-light;
+    color: $color-white;
   }
   &__link {
-    color: $color-secundary;
+    color: $color-white;
   }
   &__nav {
     background-color: $color-primary;
     display: flex;
     justify-content: space-between;
     padding: 2rem 2rem 2rem 4rem;
-    align-items: baseline;
+    align-items: center;
   }
   &__list {
     display: flex;
   }
   &__link {
-    display: block;
     padding: 0 1rem;
-  }
-  &__img {
-    width: 10%;
   }
 }
 
@@ -33,7 +30,7 @@
   &__list {
     display: flex;
     justify-content: center;
-
+    background-color: $color-white;
   }
   &__item{
     width: auto;
@@ -41,5 +38,6 @@
   }
   &__img {
     width: 4rem;
+    
   }
 }

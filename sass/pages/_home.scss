@@ -1,3 +1,28 @@
 .hero{
-  background-color: $color-primary-light;
+  display: grid;
+  grid-template-columns: 66% auto;
+  position: relative;
+  &__main{
+    height: 90vh;
+    color: $color-secundary;
+    background-color: $color-primary-light;
+    font-size: 5rem;
+  }
+  &__secundary{
+    background-color: $color-white;
+    z-index: 0;
+  }
+  &__logo{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-17.5%, -55%);
+    z-index: -1;
+    &--white_side{
+      clip-path: polygon(0 0, 49.40% 0, 49.40% 100%, 0% 100%);
+      z-index: 1;
+      filter: brightness(100)
+    }
+  }
 }
