@@ -27,6 +27,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.behind_all {
+  z-index: -1000 !important;
+}
+
+.inFrontOfAll {
+  z-index: 1000 !important;
+}
+
 .navigation {
   display: grid;
   grid-template-columns: 66% auto;
@@ -35,13 +43,13 @@ body {
 }
 .navigation__name {
   font-size: 2rem;
-  color: #FFFAFF;
+  color: #91defa;
 }
 .navigation__link {
-  color: #FFFAFF;
+  color: #FFFFFF;
 }
 .navigation__nav {
-  background-color: #035FA5;
+  background-image: linear-gradient(#14578d, #1968aa);
   display: flex;
   justify-content: space-between;
   padding: 2rem 2rem 2rem 4rem;
@@ -57,7 +65,7 @@ body {
 .social__list {
   display: flex;
   justify-content: center;
-  background-color: #FFFAFF;
+  background-color: #FFFFFF;
 }
 .social__item {
   width: auto;
@@ -74,26 +82,116 @@ body {
 }
 .hero__main {
   height: 90vh;
-  color: #30BCED;
   background-color: #1968aa;
-  font-size: 5rem;
+  animation-name: heroEnter;
+  animation-fill-mode: backwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.hero__title {
+  padding: 9rem;
+  color: #91defa;
+  font-size: 9rem;
+  font-weight: bold;
+  animation-name: titleEnter;
+  animation-delay: 2.3s;
+  animation-fill-mode: backwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 .hero__secundary {
-  background-color: #FFFAFF;
-  z-index: 0;
+  background-color: #FFFFFF;
+  z-index: -10;
 }
-.hero__logo {
-  width: 50%;
+.hero__secundary .arrow {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-17.5%, -55%);
-  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+.hero__secundary .arrow span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-bottom: 5px solid #06A8FF;
+  border-right: 5px solid #06A8FF;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll1 2s infinite;
+}
+.hero__secundary .arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.hero__secundary .arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+@keyframes scroll1 {
+  0% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+    border-bottom: 5px solid #ff6a06;
+    border-right: 5px solid #ff9b06;
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+}
+.hero__logo {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(3.79%, -55%);
+  animation-name: blueWolfEnter;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
 }
 .hero__logo--white_side {
+  animation-name: whiteWolfEnter;
+  animation-delay: 1.9s;
+  animation-fill-mode: backwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
   clip-path: polygon(0 0, 49.4% 0, 49.4% 100%, 0% 100%);
-  z-index: 1;
   filter: brightness(100);
+}
+
+@keyframes blueWolfEnter {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -100%);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+@keyframes whiteWolfEnter {
+  0% {
+    opacity: 0;
+    transform: translate(3.79%, -55%);
+  }
+}
+@keyframes titleEnter {
+  0% {
+    opacity: 0;
+  }
+}
+@keyframes heroEnter {
+  0% {
+    opacity: 0;
+    height: 0vh;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
