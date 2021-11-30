@@ -13,6 +13,7 @@
   }
   &__title{
     color: $color-secundary;
+    text-shadow: 3px 3px rgba(63, 63, 63, 0.315);
     font-size: 9rem;
     font-weight: bold;
     animation-name: titleEnter;
@@ -23,20 +24,15 @@
   }
   &__subtitle{
     display: flex;
-    justify-content: flex-start;
-    gap: 15vh;
+    justify-content: center;
+  }
+  &__scroll-down-img{
     padding-top: 10vh;
     animation-name: titleEnter;
     animation-delay: 2.6s;
     animation-fill-mode: backwards;
     animation-duration: 1.2s;
     animation-timing-function: ease-out;
-    
-    
-  }
-  &__scroll-down-text{
-    color: $color-tertiary;
-    font-size: 2.4rem;
   }
   &__secundary{
     background-color: $color-white;
@@ -44,6 +40,7 @@
   }
   &__arrow{
     display: block;
+    box-shadow: 3px 3px rgba(63, 63, 63, 0.315);
     width: 3rem;
     height: 3rem;
     border-bottom: 5px solid $color-secundary;
@@ -57,7 +54,6 @@
     &--p3{
       animation-delay: -.4s;
     }
-    
   }
   &__logo{
     width: 30%;

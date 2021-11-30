@@ -147,6 +147,7 @@ body {
 }
 .hero__title {
   color: #91defa;
+  text-shadow: 3px 3px rgba(63, 63, 63, 0.315);
   font-size: 9rem;
   font-weight: bold;
   animation-name: titleEnter;
@@ -157,8 +158,9 @@ body {
 }
 .hero__subtitle {
   display: flex;
-  justify-content: flex-start;
-  gap: 15vh;
+  justify-content: center;
+}
+.hero__scroll-down-img {
   padding-top: 10vh;
   animation-name: titleEnter;
   animation-delay: 2.6s;
@@ -166,16 +168,13 @@ body {
   animation-duration: 1.2s;
   animation-timing-function: ease-out;
 }
-.hero__scroll-down-text {
-  color: #071E22;
-  font-size: 2.4rem;
-}
 .hero__secundary {
   background-color: #FFFFFF;
   z-index: -10;
 }
 .hero__arrow {
   display: block;
+  box-shadow: 3px 3px rgba(63, 63, 63, 0.315);
   width: 3rem;
   height: 3rem;
   border-bottom: 5px solid #91defa;
