@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 66% auto;
   font-size: $default-font-size;
-  height: 10vh;
+  backface-visibility: hidden;
+  height: 13vh;
   &__name {
     font-size: 2rem;
     color: $color-tertiary;
