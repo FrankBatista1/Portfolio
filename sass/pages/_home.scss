@@ -9,9 +9,9 @@
     animation-fill-mode: backwards;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    padding: 9rem;
   }
   &__title{
-    padding: 9rem;
     color: $color-secundary;
     font-size: 9rem;
     font-weight: bold;
@@ -21,51 +21,43 @@
     animation-duration: 1s;
     animation-timing-function: ease-out;
   }
+  &__subtitle{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15vh;
+    padding-top: 10vh;
+    animation-name: titleEnter;
+    animation-delay: 2.6s;
+    animation-fill-mode: backwards;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    
+    
+  }
+  &__scroll-down-text{
+    color: $color-tertiary;
+    font-size: 2.4rem;
+  }
   &__secundary{
     background-color: $color-white;
     z-index: -10;
-    .arrow {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .arrow span {
-            display: block;
-            width: 50px;
-            height: 50px;
-            border-bottom: 5px solid #06A8FF;
-            border-right: 5px solid #06A8FF;
-            transform: rotate(45deg);
-            margin: -10px;
-            animation: scroll1 2s infinite;
-        }
-        
-        .arrow span:nth-child(2) {
-            animation-delay: -.2s;
-        }
-        
-        .arrow span:nth-child(3) {
-            animation-delay: -.4s;
-        }
-        
-        @keyframes scroll1 {
-            0% {
-                opacity: 1;
-                transform: rotate(45deg) translate(-20px, -20px);
-                border-bottom: 5px solid #ff6a06;
-                border-right: 5px solid #ff9b06;
-            }
-            50% {
-                opacity: 1;
-                transform: rotate(45deg) translate(-20px, -20px);
-            }
-            100% {
-                opacity: 1;
-                transform: rotate(45deg) translate(-20px, -20px);
-            }
-        }
+  }
+  &__arrow{
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-bottom: 5px solid $color-secundary;
+    border-right: 5px solid $color-secundary;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: arrow-scroll 2s infinite;
+    &--p2{
+      animation-delay: -.2s;
+    }
+    &--p3{
+      animation-delay: -.4s;
+    }
+    
   }
   &__logo{
     width: 30%;
@@ -89,36 +81,5 @@
     }
   }
 }
-@keyframes blueWolfEnter {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -100%);
-  }
-  30% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
 
-}
-@keyframes whiteWolfEnter {
-  0% {
-    opacity: 0;
-    transform: translate(3.79%, -55%);
-  }
-}
-@keyframes titleEnter {
-  0% {
-    opacity: 0;
-    
-  }
-}
-@keyframes heroEnter {
-  0% {
-    opacity: 0;
-    height: 0vh;
-    
-  }
-  50% {
-    opacity: 1;
-  }
-}
+

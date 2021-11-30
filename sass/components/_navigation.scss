@@ -5,24 +5,40 @@
   height: 10vh;
   &__name {
     font-size: 2rem;
-    color: $color-secundary;
+    color: $color-tertiary;
   }
-  &__link {
-    color: $color-white;
-  }
+  
   &__nav {
     background-image: linear-gradient($color-primary-dark, $color-primary);
     display: flex;
     justify-content: space-between;
     padding: 2rem 2rem 2rem 4rem;
     align-items: center;
+
   }
   &__list {
     display: flex;
   }
   &__link {
-    padding: 0 1rem;
+    position: relative;
+    color: $color-white;
+    margin: 0 1rem;
+    padding: 0 .3rem;
+    &::after{
+      content: "";
+      position:absolute;
+      background-color: $color-white;
+      height: .3rem;
+      top: 2.1rem;
+      left: 0;
+      width: 0%;
+      transition: .2s;
+    }
+    &:hover::after{
+      width: 100%;
+    }
   }
+  
 }
 
 .social {
