@@ -1,0 +1,29 @@
+.card-container {
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+  &__card {
+    background-color: $color-primary;
+    border: 1.3rem solid $color-tertiary;
+    perspective: 150rem;
+    box-shadow: 0.3rem 0.3rem 1px rgba(63, 63, 63, 0.103);
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 45rem;
+    width: 30rem;
+    transition: 0.2s;
+    border-radius: 3px;
+    &:hover {
+      box-shadow: 1rem 1rem 5px rgba(63, 63, 63, 0.103);
+      transform: translateY(-0.8rem);
+    }
+  }
+  &__img {
+    background-color: $color-black;
+    width: 100%;
+    height: 50%;
+    clip-path: polygon(93% 0, 100% 55%, 79% 66%, 68% 83%, 50% 100%, 30% 83%, 21% 68%, 0 55%, 8% 0);
+  }
+}

@@ -1,6 +1,10 @@
-.behind_all{
+.behind-all{
   z-index: -1000 !important;
 }
-.inFrontOfAll{
+.in-front-of-all{
   z-index: 1000 !important;
+}
+.center-flex{
+  display: flex;
+  justify-content: center;
 }

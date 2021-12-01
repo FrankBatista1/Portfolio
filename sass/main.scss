@@ -5,7 +5,9 @@
 @import "./base/utilities";
 @import "./base/animations";
 
-@import "./components/navigation";
-@import "./components/hero";
+@import "./layout/navigation";
+@import "./layout/hero";
+
+@import "./components/card";
 
 @import "./pages/home";

@@ -5,17 +5,16 @@
   backface-visibility: hidden;
   height: 13vh;
   &__name {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: $color-tertiary;
   }
   
   &__nav {
-    background-image: linear-gradient($color-primary-dark, $color-primary);
+    background-color: $color-primary;
     display: flex;
     justify-content: space-between;
     padding: 2rem 2rem 2rem 4rem;
     align-items: center;
-
   }
   &__list {
     display: flex;
@@ -28,7 +27,7 @@
     &::after{
       content: "";
       position:absolute;
-      background-color: $color-white;
+      background-color: $color-tertiary;
       height: .3rem;
       top: 2.1rem;
       left: 0;
@@ -43,7 +42,7 @@
 }
 
 .social {
-
+  padding: 2rem 2rem 2rem 4rem;
   &__list {
     display: flex;
     justify-content: center;
@@ -55,6 +54,10 @@
   }
   &__img {
     width: 4rem;
-    
+    transition: .2s;
+    &:hover{
+      filter: brightness(0);
+      transform: scale(1.2);
+    }
   }
 }
