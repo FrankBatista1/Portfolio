@@ -22,8 +22,9 @@
   }
   &__img {
     background-color: $color-black;
-    width: 100%;
-    height: 50%;
-    clip-path: polygon(93% 0, 100% 55%, 79% 66%, 68% 83%, 50% 100%, 30% 83%, 21% 68%, 0 55%, 8% 0);
+    width: 100.3%;
+    height: 30%;
+    // clip-path: polygon(93% 0, 100% 55%, 79% 66%, 65% 88%, 50% 95%, 35% 88%, 21% 68%, 0 55%, 8% 0);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 }
