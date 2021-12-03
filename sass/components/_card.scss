@@ -3,11 +3,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 3rem;
 }
 .card {
   background-color: $color-primary;
-  border: 1.3rem solid $color-tertiary;
+  border: 1.3rem solid $color-black;
   perspective: 150rem;
   box-shadow: 0.3rem 0.3rem 1px rgba(63, 63, 63, 0.103);
   -moz-perspective: 150rem;
@@ -16,24 +16,70 @@
   width: 30rem;
   transition: 0.2s;
   border-radius: 3px;
+  &__img {
+    width: 100.3%;
+    height: 35%;
+    // clip-path: polygon(93% 0, 100% 55%, 79% 66%, 65% 88%, 50% 95%, 35% 88%, 21% 68%, 0 55%, 8% 0);
+    clip-path: ellipse(100% 61% at 16% 33%);
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    width: 100.5%;
+    height: 0;
+    clip-path: ellipse(100% 61% at 16% 33%);
+    background-color: $color-black;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+  }
+  &__btn {
+    width: 15rem;
+    height: fit-content;
+    background-color: $color-white;
+    border: 0.5rem solid $color-white;
+    text-decoration: none;
+    font-size: $default-font-size;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0px 1rem 10rem 0rem;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
   &__title {
     padding: 1rem;
     font-size: 2rem;
   }
-  &__description{
+  &__description {
     font-size: $default-font-size;
-    padding:1rem;
+    padding: 2.5rem;
     color: $color-white;
   }
-  &__img {
-    width: 100.3%;
-    height: 30%;
-    // clip-path: polygon(93% 0, 100% 55%, 79% 66%, 65% 88%, 50% 95%, 35% 88%, 21% 68%, 0 55%, 8% 0);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  &__bottom{
+    position: absolute;
+    width: 100%;
+    top: 30.5rem;
+  }
+  &__list {
+    font-size: $default-font-size;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    color: $color-white;
   }
   &:hover {
     box-shadow: 1rem 1rem 5px rgba(63, 63, 63, 0.103);
     transform: translateY(-0.8rem);
   }
+  &:hover &__links {
+    height: 35.5%;
+  }
 }
-

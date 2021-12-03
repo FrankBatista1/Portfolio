@@ -1,10 +1,13 @@
-$color-primary: #1968aa;
+// $color-primary: #1968aa;
+$color-primary: rgb(53, 0, 53);
 $color-primary-dark: #14578d;
-$color-secundary: #C2F2FF;
+// $color-secundary: #C2F2FF;
+$color-secundary: rgb(255, 255, 255);
 $color-secundary-light: #e8f4f8;
-$color-tertiary: #151524;
-$color-white: #FFFFFF;
-$color-black: #071E22;
+// $color-tertiary: #151524;
+$color-tertiary: rgb(255, 255, 255);
+$color-white: #fafafa;
+$color-black: #0e030b;
 
 $default-font-size: 1.3rem;
 

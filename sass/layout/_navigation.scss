@@ -42,11 +42,13 @@
 }
 
 .social {
+  background-color: $color-white;
   padding: 2rem 2rem 2rem 4rem;
   &__list {
     display: flex;
     justify-content: center;
-    background-color: $color-white;
+    
+   
   }
   &__item{
     width: auto;
@@ -55,8 +57,8 @@
   &__img {
     width: 4rem;
     transition: .2s;
+    filter: brightness(0);
     &:hover{
-      filter: brightness(0);
       transform: scale(1.2);
     }
   }

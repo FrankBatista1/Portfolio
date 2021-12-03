@@ -28,13 +28,13 @@ body {
 }
 
 .primary-header {
-  color: #C2F2FF;
+  color: white;
   text-shadow: 3px 3px rgba(63, 63, 63, 0.315);
 }
 
 .secundary-header {
   font-size: 3rem;
-  color: #151524;
+  color: #0e030b;
   text-shadow: 3px 3px rgba(63, 63, 63, 0.103);
 }
 
@@ -103,10 +103,10 @@ body {
 }
 .navigation__name {
   font-size: 2.4rem;
-  color: #151524;
+  color: white;
 }
 .navigation__nav {
-  background-color: #1968aa;
+  background-color: #350035;
   display: flex;
   justify-content: space-between;
   padding: 2rem 2rem 2rem 4rem;
@@ -117,14 +117,14 @@ body {
 }
 .navigation__link {
   position: relative;
-  color: #FFFFFF;
+  color: #fafafa;
   margin: 0 1rem;
   padding: 0 0.3rem;
 }
 .navigation__link::after {
   content: "";
   position: absolute;
-  background-color: #151524;
+  background-color: white;
   height: 0.3rem;
   top: 2.1rem;
   left: 0;
@@ -136,12 +136,12 @@ body {
 }
 
 .social {
+  background-color: #fafafa;
   padding: 2rem 2rem 2rem 4rem;
 }
 .social__list {
   display: flex;
   justify-content: center;
-  background-color: #FFFFFF;
 }
 .social__item {
   width: auto;
@@ -150,9 +150,9 @@ body {
 .social__img {
   width: 4rem;
   transition: 0.2s;
+  filter: brightness(0);
 }
 .social__img:hover {
-  filter: brightness(0);
   transform: scale(1.2);
 }
 
@@ -160,18 +160,21 @@ body {
   display: grid;
   grid-template-columns: 66% auto;
   position: relative;
+  background-color: #fafafa;
+  z-index: -20;
 }
 .hero__main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 90vh;
-  background-color: #1968aa;
+  background-color: #350035;
   animation-name: heroEnter;
   animation-fill-mode: backwards;
   animation-duration: 1s;
   animation-timing-function: ease-out;
   font-size: 4rem;
+  border-radius: 0px 0px 3rem 0px;
 }
 .hero__title {
   display: flex;
@@ -197,7 +200,7 @@ body {
   animation-timing-function: ease-out;
 }
 .hero__secundary {
-  background-color: #FFFFFF;
+  background-color: #fafafa;
   z-index: -10;
   height: 90vh;
 }
@@ -206,8 +209,8 @@ body {
   box-shadow: 3px 3px rgba(63, 63, 63, 0.315);
   width: 3rem;
   height: 3rem;
-  border-bottom: 5px solid #C2F2FF;
-  border-right: 5px solid #C2F2FF;
+  border-bottom: 5px solid white;
+  border-right: 5px solid white;
   transform: rotate(45deg);
   margin: -10px;
   animation: arrow-scroll 2s infinite;
@@ -229,6 +232,7 @@ body {
   animation-fill-mode: backwards;
   animation-duration: 1.2s;
   animation-timing-function: ease-out;
+  filter: brightness(0);
 }
 .hero__logo--white_side {
   animation-name: whiteWolfEnter;
@@ -245,12 +249,12 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10rem;
+  gap: 3rem;
 }
 
 .card {
-  background-color: #1968aa;
-  border: 1.3rem solid #151524;
+  background-color: #350035;
+  border: 1.3rem solid #0e030b;
   perspective: 150rem;
   box-shadow: 0.3rem 0.3rem 1px rgba(63, 63, 63, 0.103);
   -moz-perspective: 150rem;
@@ -260,27 +264,74 @@ body {
   transition: 0.2s;
   border-radius: 3px;
 }
+.card__img {
+  width: 100.3%;
+  height: 35%;
+  clip-path: ellipse(100% 61% at 16% 33%);
+}
+.card__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  width: 100.5%;
+  height: 0;
+  clip-path: ellipse(100% 61% at 16% 33%);
+  background-color: #0e030b;
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+.card__btn {
+  width: 15rem;
+  height: fit-content;
+  background-color: #fafafa;
+  border: 0.5rem solid #fafafa;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0px 1rem 10rem 0rem;
+  transition: all 0.3s;
+}
+.card__btn:hover {
+  background-color: #0e030b;
+  color: #fafafa;
+}
 .card__title {
   padding: 1rem;
   font-size: 2rem;
 }
 .card__description {
   font-size: 1.3rem;
-  padding: 1rem;
-  color: #FFFFFF;
+  padding: 2.5rem;
+  color: #fafafa;
 }
-.card__img {
-  width: 100.3%;
-  height: 30%;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+.card__bottom {
+  position: absolute;
+  width: 100%;
+  top: 30.5rem;
+}
+.card__list {
+  font-size: 1.3rem;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  color: #fafafa;
 }
 .card:hover {
   box-shadow: 1rem 1rem 5px rgba(63, 63, 63, 0.103);
   transform: translateY(-0.8rem);
 }
+.card:hover .card__links {
+  height: 35.5%;
+}
 
 .section-projects {
-  background-color: #FFFFFF;
+  background-color: #fafafa;
   padding: 5rem 0;
 }
 
