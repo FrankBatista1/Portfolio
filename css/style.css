@@ -241,13 +241,14 @@ body {
 }
 
 .card-container {
-  padding: 5rem;
+  padding: 3.5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10rem;
 }
-.card-container__card {
+
+.card {
   background-color: #1968aa;
   border: 1.3rem solid #151524;
   perspective: 150rem;
@@ -259,15 +260,23 @@ body {
   transition: 0.2s;
   border-radius: 3px;
 }
-.card-container__card:hover {
-  box-shadow: 1rem 1rem 5px rgba(63, 63, 63, 0.103);
-  transform: translateY(-0.8rem);
+.card__title {
+  padding: 1rem;
+  font-size: 2rem;
 }
-.card-container__img {
-  background-color: #071E22;
+.card__description {
+  font-size: 1.3rem;
+  padding: 1rem;
+  color: #FFFFFF;
+}
+.card__img {
   width: 100.3%;
   height: 30%;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.card:hover {
+  box-shadow: 1rem 1rem 5px rgba(63, 63, 63, 0.103);
+  transform: translateY(-0.8rem);
 }
 
 .section-projects {
