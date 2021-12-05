@@ -106,7 +106,7 @@ body {
   color: white;
 }
 .navigation__nav {
-  background-color: #350035;
+  background-color: #2d148d;
   display: flex;
   justify-content: space-between;
   padding: 2rem 2rem 2rem 4rem;
@@ -168,7 +168,7 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 90vh;
-  background-color: #350035;
+  background-color: #2d148d;
   animation-name: heroEnter;
   animation-fill-mode: backwards;
   animation-duration: 1s;
@@ -226,7 +226,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(3.79%, -55%);
+  transform: translate(3.89%, -55%);
   animation-name: blueWolfEnter;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
@@ -253,7 +253,7 @@ body {
 }
 
 .card {
-  background-color: #350035;
+  background-color: #2d148d;
   border: 1.3rem solid #0e030b;
   perspective: 150rem;
   box-shadow: 0.3rem 0.3rem 1px rgba(63, 63, 63, 0.103);
@@ -279,7 +279,7 @@ body {
   clip-path: ellipse(100% 61% at 16% 33%);
   background-color: #0e030b;
   position: absolute;
-  color: white;
+  color: #fafafa;
   top: 0;
   left: 0;
   transition: all 0.3s;
@@ -288,6 +288,7 @@ body {
   width: 15rem;
   height: fit-content;
   background-color: #fafafa;
+  color: #2d148d;
   border: 0.5rem solid #fafafa;
   text-decoration: none;
   font-size: 1.3rem;
@@ -315,12 +316,13 @@ body {
 }
 .card__list {
   font-size: 1.3rem;
-  padding-top: 3rem;
+  padding-top: 0.1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
   color: #fafafa;
+  padding: 1.2rem;
 }
 .card:hover {
   box-shadow: 1rem 1rem 5px rgba(63, 63, 63, 0.103);
@@ -331,6 +333,11 @@ body {
 }
 
 .section-projects {
+  background-color: #fafafa;
+  padding: 5rem 0;
+}
+
+.section-about {
   background-color: #fafafa;
   padding: 5rem 0;
 }

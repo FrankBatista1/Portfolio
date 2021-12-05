@@ -32,7 +32,7 @@
     clip-path: ellipse(100% 61% at 16% 33%);
     background-color: $color-black;
     position: absolute;
-    color: white;
+    color: $color-white;
     top: 0;
     left: 0;
     transition: all 0.3s;
@@ -41,6 +41,7 @@
     width: 15rem;
     height: fit-content;
     background-color: $color-white;
+    color: $color-primary;
     border: 0.5rem solid $color-white;
     text-decoration: none;
     font-size: $default-font-size;
@@ -68,12 +69,13 @@
   }
   &__list {
     font-size: $default-font-size;
-    padding-top: 3rem;
+    padding-top: .1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     color: $color-white;
+    padding: 1.2rem;
   }
   &:hover {
     box-shadow: 1rem 1rem 5px rgba(63, 63, 63, 0.103);
