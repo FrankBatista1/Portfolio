@@ -7,7 +7,7 @@
 }
 .card {
   background-color: $color-primary;
-  border: 1.3rem solid $color-black;
+  border: .3rem solid $color-black;
   perspective: 150rem;
   box-shadow: 0.3rem 0.3rem 1px rgba(63, 63, 63, 0.103);
   -moz-perspective: 150rem;
@@ -21,6 +21,7 @@
     height: 35%;
     // clip-path: polygon(93% 0, 100% 55%, 79% 66%, 65% 88%, 50% 95%, 35% 88%, 21% 68%, 0 55%, 8% 0);
     clip-path: ellipse(100% 61% at 16% 33%);
+   
   }
   &__links {
     display: flex;
@@ -65,17 +66,24 @@
   &__bottom{
     position: absolute;
     width: 100%;
-    top: 30.5rem;
+    top: 29.5rem;
   }
   &__list {
     font-size: $default-font-size;
-    padding-top: .1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     color: $color-white;
-    padding: 1.2rem;
+    padding: 1rem;
+    padding-top: 0;
+  }
+  &__technologies{
+    padding: .7rem;
+    border-radius: 2rem;
+    border: .3rem solid $color-black;
+    background-color: $color-white;
+    color: $color-black;
   }
   &:hover {
     box-shadow: 1rem 1rem 5px rgba(63, 63, 63, 0.103);

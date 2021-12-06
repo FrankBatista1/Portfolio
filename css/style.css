@@ -106,7 +106,7 @@ body {
   color: white;
 }
 .navigation__nav {
-  background-color: #2d148d;
+  background-color: #5e0e5a;
   display: flex;
   justify-content: space-between;
   padding: 2rem 2rem 2rem 4rem;
@@ -168,7 +168,7 @@ body {
   flex-direction: column;
   justify-content: center;
   height: 90vh;
-  background-color: #2d148d;
+  background-color: #5e0e5a;
   animation-name: heroEnter;
   animation-fill-mode: backwards;
   animation-duration: 1s;
@@ -253,8 +253,8 @@ body {
 }
 
 .card {
-  background-color: #2d148d;
-  border: 1.3rem solid #0e030b;
+  background-color: #5e0e5a;
+  border: 0.3rem solid #0e030b;
   perspective: 150rem;
   box-shadow: 0.3rem 0.3rem 1px rgba(63, 63, 63, 0.103);
   -moz-perspective: 150rem;
@@ -288,7 +288,7 @@ body {
   width: 15rem;
   height: fit-content;
   background-color: #fafafa;
-  color: #2d148d;
+  color: #5e0e5a;
   border: 0.5rem solid #fafafa;
   text-decoration: none;
   font-size: 1.3rem;
@@ -312,17 +312,24 @@ body {
 .card__bottom {
   position: absolute;
   width: 100%;
-  top: 30.5rem;
+  top: 29.5rem;
 }
 .card__list {
   font-size: 1.3rem;
-  padding-top: 0.1rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   color: #fafafa;
-  padding: 1.2rem;
+  padding: 1rem;
+  padding-top: 0;
+}
+.card__technologies {
+  padding: 0.7rem;
+  border-radius: 2rem;
+  border: 0.3rem solid #0e030b;
+  background-color: #fafafa;
+  color: #0e030b;
 }
 .card:hover {
   box-shadow: 1rem 1rem 5px rgba(63, 63, 63, 0.103);
@@ -337,7 +344,7 @@ body {
   padding: 5rem 0;
 }
 
-.section-about {
+.section-skills {
   background-color: #fafafa;
   padding: 5rem 0;
 }
