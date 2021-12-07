@@ -67,6 +67,7 @@
     position: absolute;
     width: 100%;
     top: 29.5rem;
+    height: 15rem;
   }
   &__list {
     font-size: $default-font-size;
@@ -77,6 +78,7 @@
     color: $color-white;
     padding: 1rem;
     padding-top: 0;
+    
   }
   &__technologies{
     padding: .7rem;

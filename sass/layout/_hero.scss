@@ -73,7 +73,7 @@
     animation-fill-mode: backwards;
     animation-duration: 1.2s;
     animation-timing-function: ease-out;
-    filter: brightness(0);
+    filter: invert(13%) sepia(80%) saturate(2311%) hue-rotate(285deg) brightness(85%) contrast(105%);
     &--white_side{
       animation-name: whiteWolfEnter;
       animation-delay: 1.9s;
@@ -81,7 +81,7 @@
       animation-duration: 1s;
       animation-timing-function: ease-out;
       clip-path: polygon(0 0, 49.40% 0, 49.40% 100%, 0% 100%);
-      filter: brightness(100);
+      filter: invert(100%) sepia(0%) saturate(7481%) hue-rotate(121deg) brightness(97%) contrast(108%);
     }
   }
 }
