@@ -103,7 +103,7 @@ body {
 }
 .navigation__name {
   font-size: 2.4rem;
-  color: white;
+  color: #7AFFC6;
 }
 .navigation__nav {
   background-color: #5e0e5a;
@@ -124,7 +124,7 @@ body {
 .navigation__link::after {
   content: "";
   position: absolute;
-  background-color: white;
+  background-color: #7AFFC6;
   height: 0.3rem;
   top: 2.1rem;
   left: 0;
@@ -150,7 +150,7 @@ body {
 .social__img {
   width: 4rem;
   transition: 0.2s;
-  filter: invert(13%) sepia(80%) saturate(2311%) hue-rotate(285deg) brightness(85%) contrast(105%);
+  filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg) brightness(90%) contrast(106%);
 }
 .social__img:hover {
   transform: scale(1.2);
@@ -226,13 +226,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(3.89%, -55%);
+  transform: translate(4.1%, -55%);
   animation-name: blueWolfEnter;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
   animation-duration: 1.2s;
   animation-timing-function: ease-out;
-  filter: invert(13%) sepia(80%) saturate(2311%) hue-rotate(285deg) brightness(85%) contrast(105%);
+  filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg) brightness(90%) contrast(106%);
 }
 .hero__logo--white_side {
   animation-name: whiteWolfEnter;
@@ -241,13 +241,14 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out;
   clip-path: polygon(0 0, 49.4% 0, 49.4% 100%, 0% 100%);
-  filter: invert(100%) sepia(0%) saturate(7481%) hue-rotate(121deg) brightness(97%) contrast(108%);
+  filter: invert(84%) sepia(9%) saturate(1885%) hue-rotate(96deg) brightness(105%) contrast(103%);
 }
 
 .skills__list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10rem;
   column-gap: 10rem;
   font-size: 2rem;
 }
@@ -259,6 +260,10 @@ body {
 .skills__title {
   display: inline-block;
   margin: auto;
+}
+.skills__img {
+  filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg) brightness(90%) contrast(106%);
+  width: 20rem;
 }
 
 .card-container {
@@ -345,8 +350,8 @@ body {
 .card__technologies {
   padding: 0.7rem;
   border-radius: 2rem;
-  border: 0.3rem solid #0e030b;
-  background-color: #fafafa;
+  border: 0.1rem solid #0e030b;
+  background-color: #7AFFC6;
   color: #0e030b;
 }
 .card:hover {
@@ -359,12 +364,12 @@ body {
 
 .section-projects {
   background-color: #fafafa;
-  padding: 5rem 0;
+  padding: 5rem 3rem;
 }
 
 .section-skills {
   background-color: #fafafa;
-  padding: 5rem 0;
+  padding: 5rem 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

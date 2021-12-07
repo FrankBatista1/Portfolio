@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 10rem;
     column-gap: 10rem;
     font-size: 2rem;
   }
@@ -14,5 +15,9 @@
   &__title{
     display:inline-block;
     margin: auto;
+  }
+  &__img{
+    filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg) brightness(90%) contrast(106%);
+    width: 20rem;
   }
 }
