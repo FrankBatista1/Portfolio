@@ -174,23 +174,19 @@ body {
   animation-fill-mode: backwards;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  font-size: 4rem;
+  font-size: 3.6rem;
   border-radius: 0px 0px 3rem 0px;
 }
 .hero__title {
-  display: flex;
-  justify-content: center;
+  padding-left: 3rem;
   animation-name: titleEnter;
   animation-delay: 2.3s;
   animation-fill-mode: backwards;
   animation-duration: 1s;
   animation-timing-function: ease-out;
-  padding-left: 8rem;
-  padding-right: 23rem;
 }
 .hero__subtitle {
-  display: flex;
-  justify-content: center;
+  padding-left: 6rem;
 }
 .hero__scroll-down-img {
   padding-top: 20vh;
@@ -213,7 +209,6 @@ body {
   border-bottom: 5px solid white;
   border-right: 5px solid white;
   transform: rotate(45deg);
-  margin: -10px;
   animation: arrow-scroll 2s infinite;
 }
 .hero__arrow--p2 {
