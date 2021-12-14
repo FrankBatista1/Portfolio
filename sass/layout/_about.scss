@@ -1,10 +1,38 @@
-.about{
-  &__paragraph{
-    font-size: $default-font-size;
-    display: block;
-    margin: auto;
-    width: 50%;
-    padding-top: 5rem;
-    
+.about {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  &__info {
+    position: relative;
+    left: 8rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    width: 60rem;
+  }
+  &__pharagraph {
+    padding: 1rem;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+  }
+  &__title{
+    font-size: 3rem;
+    color: $color-primary;
+  }
+  &__resume-link {
+    width: fit-content;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 3px;
+    color: $color-black;
+    border: 1px solid $color-black;
+  }
+  &__photograph {
+    right: 8rem;
+    position: relative;
+    width: 60rem;
+    border-radius: 0.5rem;
   }
 }

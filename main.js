@@ -1,3 +1,6 @@
+
+
+
 const links = document.querySelectorAll(".navigation__nav ul a");
 
 for (const link of links) {

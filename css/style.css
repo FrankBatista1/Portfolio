@@ -34,9 +34,8 @@ body {
 }
 
 .secundary-header {
-  font-size: 4.2rem;
+  font-size: 3.4rem;
   color: #0e030b;
-  text-shadow: 3px 3px rgba(63, 63, 63, 0.103);
 }
 
 .behind-all {
@@ -252,7 +251,7 @@ body {
   flex-wrap: wrap;
   gap: 15%;
   row-gap: 4rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .skills__item {
   display: flex;
@@ -265,7 +264,7 @@ body {
 }
 .skills__img {
   filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg) brightness(90%) contrast(106%);
-  width: 20rem;
+  width: 15rem;
   transition: 0.2s;
   margin-bottom: 2rem;
 }
@@ -273,12 +272,69 @@ body {
   transform: scale(1.1);
 }
 
-.about__paragraph {
-  font-size: 1.3rem;
-  display: block;
-  margin: auto;
-  width: 50%;
-  padding-top: 5rem;
+.about {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+.about__info {
+  position: relative;
+  left: 8rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 60rem;
+}
+.about__pharagraph {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+.about__title {
+  font-size: 3rem;
+  color: #5e0e5a;
+}
+.about__resume-link {
+  width: fit-content;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 3px;
+  color: #0e030b;
+  border: 1px solid #0e030b;
+}
+.about__photograph {
+  right: 8rem;
+  position: relative;
+  width: 60rem;
+  border-radius: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #5e0e5a;
+  padding: 3.3rem;
+}
+.footer__links {
+  color: #7AFFC6;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.footer__links:hover {
+  color: #fafafa;
+}
+.footer__logo {
+  width: 10rem;
+  filter: invert(84%) sepia(9%) saturate(1885%) hue-rotate(96deg) brightness(105%) contrast(103%);
+}
+.footer__copyright {
+  padding-top: 1rem;
+  color: #fafafa;
+  font-size: 1.2rem;
 }
 
 .card-container {

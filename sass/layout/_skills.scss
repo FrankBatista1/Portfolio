@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     gap: 15%;
     row-gap: 4rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   &__item{
     display: flex;
@@ -19,7 +19,7 @@
   }
   &__img{
     filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg) brightness(90%) contrast(106%);
-    width: 20rem;
+    width: 15rem;
     transition: .2s;
     margin-bottom: 2rem;
     &:hover{
