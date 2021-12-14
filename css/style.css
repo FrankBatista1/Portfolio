@@ -36,6 +36,7 @@ body {
 .secundary-header {
   font-size: 3.4rem;
   color: #0e030b;
+  text-decoration: underline #5e0e5a;
 }
 
 .behind-all {
@@ -185,7 +186,7 @@ body {
   animation-duration: 1s;
   animation-timing-function: ease-out;
   padding-left: 8rem;
-  padding-right: 14rem;
+  padding-right: 23rem;
 }
 .hero__subtitle {
   display: flex;
@@ -264,7 +265,7 @@ body {
 }
 .skills__img {
   filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg) brightness(90%) contrast(106%);
-  width: 15rem;
+  width: 20rem;
   transition: 0.2s;
   margin-bottom: 2rem;
 }
