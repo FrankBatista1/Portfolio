@@ -273,6 +273,14 @@ body {
   transform: scale(1.1);
 }
 
+.about__paragraph {
+  font-size: 1.3rem;
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding-top: 5rem;
+}
+
 .card-container {
   padding: 3rem;
   padding-top: 5rem;
