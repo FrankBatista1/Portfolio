@@ -1,12 +1,16 @@
 .skills{
   &__list{
-    padding-top: 5rem;
+    padding: 5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15%;
+    gap: 10rem;
     row-gap: 4rem;
     font-size: 1.7rem;
+    @include respond(tab-port){
+      padding: 1rem;
+      padding-top: 5rem;
+    }
   }
   &__item{
     display: flex;
@@ -22,6 +26,10 @@
     width: 20rem;
     transition: .2s;
     margin-bottom: 2rem;
+    @include respond(tab-port){
+      width: 10rem;
+    }
+   
     &:hover{
       transform: scale(1.1);
     }

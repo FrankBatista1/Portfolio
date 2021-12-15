@@ -4,6 +4,10 @@
   position: relative;
   background-color: $color-white;
   z-index: -20;
+  @include respond(tab-land) {
+    grid-template-columns: none;
+    background-color: $color-primary;
+  }
   &__main {
     display: flex;
     flex-direction: column;
@@ -16,18 +20,36 @@
     animation-timing-function: ease-out;
     font-size: 3.6rem;
     border-radius: 0px 0px 3rem 0px;
+    @include respond(tab-land) {
+      border-radius: none;
+    }
   }
   &__title {
     padding-left: 3rem;
+    padding-right: 30rem;
     animation-name: titleEnter;
     animation-delay: 2.3s;
     animation-fill-mode: backwards;
-   
+
     animation-duration: 1s;
     animation-timing-function: ease-out;
+    @include respond(tab-land) {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      padding: 0;
+    }
+    @include respond(tab-port){
+      font-size: 3.2rem;
+    }
   }
   &__subtitle {
     padding-left: 6rem;
+    @include respond(tab-land) {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
   }
   &__scroll-down-img {
     padding-top: 20vh;
@@ -38,6 +60,9 @@
     animation-timing-function: ease-out;
   }
   &__secundary {
+    @include respond(tab-land) {
+      display: none;
+    }
     background-color: $color-white;
     z-index: -10;
     height: 90vh;
@@ -80,6 +105,9 @@
       clip-path: polygon(0 0, 49.4% 0, 49.4% 100%, 0% 100%);
       filter: invert(84%) sepia(9%) saturate(1885%) hue-rotate(96deg)
         brightness(105%) contrast(103%);
+      @include respond(tab-land) {
+        display: none;
+      }
     }
   }
 }

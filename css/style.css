@@ -1,3 +1,15 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1380px:   Tablet landscape
+1800px + :      Big desktop
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+1em = 16px
+*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   padding: 0;
@@ -8,6 +20,16 @@
 html {
   font-size: 62.5%;
   background-color: #fafafa;
+}
+@media only screen and (max-width: 86.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -102,9 +124,19 @@ body {
   backface-visibility: hidden;
   height: 13vh;
 }
+@media only screen and (max-width: 86.25em) {
+  .navigation {
+    grid-template-columns: 100% auto;
+  }
+}
 .navigation__name {
   font-size: 2.4rem;
   color: #7AFFC6;
+}
+@media only screen and (max-width: 56.25em) {
+  .navigation__name {
+    font-size: 2rem;
+  }
 }
 .navigation__nav {
   background-color: #5e0e5a;
@@ -140,6 +172,11 @@ body {
   background-color: #fafafa;
   padding: 2rem 2rem 2rem 4rem;
 }
+@media only screen and (max-width: 86.25em) {
+  .social {
+    display: none;
+  }
+}
 .social__list {
   display: flex;
   justify-content: center;
@@ -164,6 +201,12 @@ body {
   background-color: #fafafa;
   z-index: -20;
 }
+@media only screen and (max-width: 86.25em) {
+  .hero {
+    grid-template-columns: none;
+    background-color: #5e0e5a;
+  }
+}
 .hero__main {
   display: flex;
   flex-direction: column;
@@ -177,16 +220,42 @@ body {
   font-size: 3.6rem;
   border-radius: 0px 0px 3rem 0px;
 }
+@media only screen and (max-width: 86.25em) {
+  .hero__main {
+    border-radius: none;
+  }
+}
 .hero__title {
   padding-left: 3rem;
+  padding-right: 30rem;
   animation-name: titleEnter;
   animation-delay: 2.3s;
   animation-fill-mode: backwards;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 }
+@media only screen and (max-width: 86.25em) {
+  .hero__title {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .hero__title {
+    font-size: 3.2rem;
+  }
+}
 .hero__subtitle {
   padding-left: 6rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .hero__subtitle {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
 }
 .hero__scroll-down-img {
   padding-top: 20vh;
@@ -200,6 +269,11 @@ body {
   background-color: #fafafa;
   z-index: -10;
   height: 90vh;
+}
+@media only screen and (max-width: 86.25em) {
+  .hero__secundary {
+    display: none;
+  }
 }
 .hero__arrow {
   display: block;
@@ -239,15 +313,26 @@ body {
   clip-path: polygon(0 0, 49.4% 0, 49.4% 100%, 0% 100%);
   filter: invert(84%) sepia(9%) saturate(1885%) hue-rotate(96deg) brightness(105%) contrast(103%);
 }
+@media only screen and (max-width: 86.25em) {
+  .hero__logo--white_side {
+    display: none;
+  }
+}
 
 .skills__list {
-  padding-top: 5rem;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15%;
+  gap: 10rem;
   row-gap: 4rem;
   font-size: 1.7rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .skills__list {
+    padding: 1rem;
+    padding-top: 5rem;
+  }
 }
 .skills__item {
   display: flex;
@@ -263,6 +348,11 @@ body {
   width: 20rem;
   transition: 0.2s;
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .skills__img {
+    width: 10rem;
+  }
 }
 .skills__img:hover {
   transform: scale(1.1);
@@ -282,6 +372,11 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 60rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .about__info {
+    left: 0;
+  }
 }
 .about__pharagraph {
   padding: 1rem;
@@ -305,6 +400,11 @@ body {
   position: relative;
   width: 60rem;
   border-radius: 0.5rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .about__photograph {
+    display: none;
+  }
 }
 
 .footer {
@@ -340,6 +440,20 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 2rem;
+}
+@media only screen and (max-width: 86.25em) {
+  .card-container {
+    padding: 5rem;
+    padding-top: 5rem;
+    gap: 8rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .card-container {
+    padding: 0;
+    padding-top: 5rem;
+    gap: 4rem;
+  }
 }
 
 .card {
@@ -387,6 +501,11 @@ body {
   left: 0;
   transition: ease-out 0.3s;
 }
+@media only screen and (max-width: 86.25em) {
+  .card__links {
+    opacity: 1;
+  }
+}
 .card__btn-container {
   display: block;
   margin: auto;
@@ -406,6 +525,11 @@ body {
   padding: 0.5rem 0.3rem;
   border-radius: 3rem;
   transition: all 0.3s;
+}
+@media only screen and (max-width: 86.25em) {
+  .card__btn {
+    background-color: #7affc5de;
+  }
 }
 .card__btn:hover {
   background-color: #0e030b;

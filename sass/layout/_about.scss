@@ -11,6 +11,9 @@
     justify-content: center;
     flex-direction: column;
     width: 60rem;
+    @include respond(tab-land){
+      left: 0;
+    }
   }
   &__pharagraph {
     padding: 1rem;
@@ -34,5 +37,8 @@
     position: relative;
     width: 60rem;
     border-radius: 0.5rem;
+    @include respond(tab-land){
+      display: none;
+    }
   }
 }
