@@ -28,9 +28,16 @@
     width: fit-content;
     margin: 1rem;
     padding: 1rem;
-    border-radius: 3px;
+    border-radius: 10rem;
     color: $color-black;
+    font-size: 1.2rem;
     border: 1px solid $color-black;
+    background-color: $color-secundary-transparent;
+    transition: all .2s;
+    &:hover{
+      background-color: $color-black;
+      color: $color-white;
+    }
   }
   &__photograph {
     right: 8rem;

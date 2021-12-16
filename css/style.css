@@ -380,9 +380,16 @@ body {
   width: fit-content;
   margin: 1rem;
   padding: 1rem;
-  border-radius: 3px;
+  border-radius: 10rem;
   color: #0e030b;
+  font-size: 1.2rem;
   border: 1px solid #0e030b;
+  background-color: #6efbfb63;
+  transition: all 0.2s;
+}
+.about__resume-link:hover {
+  background-color: #0e030b;
+  color: #FFF4E4;
 }
 .about__photograph {
   right: 8rem;
