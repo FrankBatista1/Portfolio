@@ -30,7 +30,7 @@
     animation-name: titleEnter;
     animation-delay: 2.3s;
     animation-fill-mode: backwards;
-
+    color: $color-secundary;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     @include respond(tab-land) {
@@ -94,8 +94,7 @@
     animation-fill-mode: backwards;
     animation-duration: 1.2s;
     animation-timing-function: ease-out;
-    filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg)
-      brightness(90%) contrast(106%);
+    filter: $filter-color-primary;
     &--white_side {
       animation-name: whiteWolfEnter;
       animation-delay: 1.9s;
@@ -103,8 +102,7 @@
       animation-duration: 1s;
       animation-timing-function: ease-out;
       clip-path: polygon(0 0, 49.4% 0, 49.4% 100%, 0% 100%);
-      filter: invert(84%) sepia(9%) saturate(1885%) hue-rotate(96deg)
-        brightness(105%) contrast(103%);
+      filter: $filter-color-secundary;
       @include respond(tab-land) {
         display: none;
       }

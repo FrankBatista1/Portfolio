@@ -22,7 +22,7 @@
     margin: auto;
   }
   &__img{
-    filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg) brightness(90%) contrast(106%);
+    filter: $filter-color-primary;
     width: 20rem;
     transition: .2s;
     margin-bottom: 2rem;

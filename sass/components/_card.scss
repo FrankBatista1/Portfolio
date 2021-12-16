@@ -76,7 +76,7 @@
     justify-content: center;
     width: 14rem;
     height: fit-content;
-    background-color: #7affc5a1;
+    background-color: $color-secundary-transparent;
     color: $color-black;
     border: 0.2rem solid $color-black;
     text-decoration: none;
@@ -85,7 +85,7 @@
     border-radius: 3rem;
     transition: all 0.3s;
     @include respond(tab-land) {
-      background-color: #7affc5de;
+      background-color: $color-secundary-transparent;
     }
     &:hover {
       background-color: $color-black;

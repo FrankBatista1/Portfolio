@@ -1,13 +1,13 @@
-// $color-primary: #1968aa;
-$color-primary:#5e0e5a;
-$color-primary-dark: #14578d;
-// $color-secundary: #C2F2FF;
-$color-secundary: rgb(255, 255, 255);
+$color-primary:#0091AD;
+$color-secundary: #6EFAFB;
 $color-secundary-light: #e8f4f8;
-// $color-tertiary: #151524;
-$color-tertiary: #7AFFC6;
-$color-white: #fafafa;
+$color-tertiary: #F7E8A4;
+$color-white: #FFF4E4;
 $color-black: #0e030b;
+$color-secundary-transparent:#6efbfb63;
+
+$filter-color-primary: invert(40%) sepia(79%) saturate(4498%) hue-rotate(167deg) brightness(96%) contrast(101%);
+$filter-color-secundary: invert(98%) sepia(81%) saturate(3287%) hue-rotate(152deg) brightness(100%) contrast(98%);
 
 $default-font-size: 1.3rem;
 

@@ -64,8 +64,7 @@
   &__img {
     width: 4rem;
     transition: 0.2s;
-    filter: invert(14%) sepia(21%) saturate(7295%) hue-rotate(282deg)
-      brightness(90%) contrast(106%);
+    filter: $filter-color-primary;
     &:hover {
       transform: scale(1.2);
     }
